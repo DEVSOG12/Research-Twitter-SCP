@@ -1,0 +1,2 @@
+// Git Command to remove all commits that have ./config/config.ini in them
+git filter-branch --force --index-filter 'git rm --cached --ignore-unmatch ./config/config.ini' --prune-empty --tag-name-filter cat -- --all
